@@ -1,0 +1,10 @@
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/icudtl.dat
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/flutter_windows.dll
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/.env
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/NativeAssetsManifest.json
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
