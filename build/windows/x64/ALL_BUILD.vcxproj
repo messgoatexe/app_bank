@@ -144,6 +144,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{2D8476C1-1807-3A69-BEEB-E9E1A979F5DF}</Project>
       <Name>app_bank</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\plugins\connectivity_plus\connectivity_plus_plugin.vcxproj">
+      <Project>{8D3221E9-9AEC-3A05-A1A0-994159C9DB11}</Project>
+      <Name>connectivity_plus_plugin</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\flutter\flutter_wrapper_app.vcxproj">
       <Project>{DB8DCF08-75FE-3F87-BC02-4F3EA0E53D3E}</Project>
       <Name>flutter_wrapper_app</Name>
@@ -151,6 +155,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\flutter\flutter_wrapper_plugin.vcxproj">
       <Project>{85A2ADFF-1FE6-3C55-87DC-3AF1218EA4EE}</Project>
       <Name>flutter_wrapper_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\plugins\permission_handler_windows\permission_handler_windows_plugin.vcxproj">
+      <Project>{A3ACB157-81C0-3D9A-8656-CC04316A8B32}</Project>
+      <Name>permission_handler_windows_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\plugins\printing\printing_plugin.vcxproj">
+      <Project>{D3B537E9-99AE-3ACE-9515-F3DD358EE096}</Project>
+      <Name>printing_plugin</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

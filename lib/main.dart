@@ -3,9 +3,12 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:provider/provider.dart';
 import 'providers/auth_provider.dart';
 import 'providers/transactions_provider.dart';
+import 'providers/reminders_provider.dart';
 import 'screens/login_screen.dart';
 import 'screens/transactions_list_screen.dart';
 import 'services/db_service.dart';
+import 'services/notification_service.dart';
+import 'services/offline_sync_service.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'services/mock_db_service.dart';
 // SQLite support for desktop
@@ -59,6 +62,24 @@ void main() async {
     }
   }
 
+  // Initialize notification service
+  try {
+    print('[main] Initializing NotificationService...');
+    await NotificationService.instance.initialize();
+    print('[main] ✅ NotificationService initialized');
+  } catch (e) {
+    print('[main] ⚠️ NotificationService.initialize() failed: $e');
+  }
+
+  // Initialize offline sync service
+  try {
+    print('[main] Initializing OfflineSyncService...');
+    await OfflineSyncService.instance.initialize();
+    print('[main] ✅ OfflineSyncService initialized');
+  } catch (e) {
+    print('[main] ⚠️ OfflineSyncService.initialize() failed: $e');
+  }
+
   // If using the mock DB for testing, ensure a test user exists
   try {
     // Accès sécurisé à dotenv
@@ -102,6 +123,12 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider<TransactionsProvider>(
           create: (_) => TransactionsProvider(),
+        ),
+        ChangeNotifierProvider<RemindersProvider>(
+          create: (_) => RemindersProvider.instance,
+        ),
+        ChangeNotifierProvider<OfflineSyncService>(
+          create: (_) => OfflineSyncService.instance,
         ),
       ],
       child: MaterialApp(

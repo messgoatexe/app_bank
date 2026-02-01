@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\2c28f9c1ffc6f6f7d6334d533be335e6\pdfium-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\201cadae41b3b2a333b413d62697a54a\pdfium-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\e774cb00f92d7fb972e3f23e70f822b8\pdfium-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E42F3208-CDD9-3F98-8DE2-91F9331EA018}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\PDFIUM-DOWNLOAD\CMAKEFILES\E774CB00F92D7FB972E3F23E70F822B8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download" "-BC:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/pdfium-download.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

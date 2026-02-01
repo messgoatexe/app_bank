@@ -1,0 +1,14 @@
+# Target labels
+ pdfium-download
+# Source files and their labels
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/pdfium-download
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/e774cb00f92d7fb972e3f23e70f822b8/pdfium-download.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/201cadae41b3b2a333b413d62697a54a/pdfium-download-complete.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-build.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-configure.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-download.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-install.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-mkdir.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-patch.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-test.rule
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-download/CMakeFiles/2c28f9c1ffc6f6f7d6334d533be335e6/pdfium-download-update.rule

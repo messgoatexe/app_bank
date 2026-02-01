@@ -185,8 +185,46 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for nuget
+FETCHCONTENT_SOURCE_DIR_NUGET:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of nuget
+FETCHCONTENT_UPDATES_DISCONNECTED_NUGET:BOOL=OFF
+
 //No help, variable specified on the command line.
 FLUTTER_TARGET_PLATFORM:UNINITIALIZED=windows-x64
+
+//Path to a program.
+NUGET:FILEPATH=NUGET-NOTFOUND
+
+//Architecture of pdfium used
+PDFIUM_ARCH:STRING=x64
+
+//Version of pdfium used
+PDFIUM_VERSION:STRING=5200
+
+//Path to a file.
+PDFium_IMPLIB:FILEPATH=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-src/lib/pdfium.dll.lib
+
+//Path to a file.
+PDFium_INCLUDE_DIR:PATH=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-src/include
+
+//Path to a file.
+PDFium_LIBRARY:FILEPATH=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-src/bin/pdfium.dll
 
 //Value Computed by CMake
 app_bank_BINARY_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64
@@ -196,6 +234,33 @@ app_bank_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 app_bank_SOURCE_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/windows
+
+//Value Computed by CMake
+connectivity_plus_BINARY_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/connectivity_plus
+
+//Value Computed by CMake
+connectivity_plus_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+connectivity_plus_SOURCE_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/windows/flutter/ephemeral/.plugin_symlinks/connectivity_plus/windows
+
+//Value Computed by CMake
+permission_handler_windows_BINARY_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/permission_handler_windows
+
+//Value Computed by CMake
+permission_handler_windows_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+permission_handler_windows_SOURCE_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/windows/flutter/ephemeral/.plugin_symlinks/permission_handler_windows/windows
+
+//Value Computed by CMake
+printing_BINARY_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/printing
+
+//Value Computed by CMake
+printing_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+printing_SOURCE_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/windows/flutter/ephemeral/.plugin_symlinks/printing/windows
 
 //Value Computed by CMake
 runner_BINARY_DIR:STATIC=C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner
@@ -285,7 +350,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
@@ -337,4 +402,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PDFium
+FIND_PACKAGE_MESSAGE_DETAILS_PDFium:INTERNAL=[C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-src/bin/pdfium.dll][C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-src/lib/pdfium.dll.lib][C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/pdfium-src/include][v106.0.5200.0()]
 

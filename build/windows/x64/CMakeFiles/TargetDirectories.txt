@@ -8,3 +8,12 @@ C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/flutter/CMa
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/CMakeFiles/app_bank.dir
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/CMakeFiles/INSTALL.dir
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/CMakeFiles/ALL_BUILD.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/connectivity_plus/CMakeFiles/connectivity_plus_plugin.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/connectivity_plus/CMakeFiles/INSTALL.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/connectivity_plus/CMakeFiles/ALL_BUILD.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/permission_handler_windows/CMakeFiles/permission_handler_windows_plugin.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/permission_handler_windows/CMakeFiles/INSTALL.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/permission_handler_windows/CMakeFiles/ALL_BUILD.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/printing/CMakeFiles/printing_plugin.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/printing/CMakeFiles/INSTALL.dir
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/plugins/printing/CMakeFiles/ALL_BUILD.dir

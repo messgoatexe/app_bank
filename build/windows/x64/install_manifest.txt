@@ -1,5 +1,9 @@
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/icudtl.dat
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/flutter_windows.dll
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/connectivity_plus_plugin.dll
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/permission_handler_windows_plugin.dll
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/printing_plugin.dll
+C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/pdfium.dll
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/.env
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
 C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.json

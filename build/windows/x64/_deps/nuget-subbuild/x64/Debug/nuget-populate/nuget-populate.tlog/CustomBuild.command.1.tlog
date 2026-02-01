@@ -1,0 +1,162 @@
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/tmp/nuget-populate-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/download-nuget-populate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/verify-nuget-populate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-update"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-COPYFILE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget.exe" "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-copyfile"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-CONFIGURE.RULE
+setlocal
+cd "C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\_deps\nuget-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-BUILD.RULE
+setlocal
+cd "C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\_deps\nuget-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-INSTALL.RULE
+setlocal
+cd "C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\_deps\nuget-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\55EC4B6CEF9103AE4DED0CECA526351A\NUGET-POPULATE-TEST.RULE
+setlocal
+cd "C:\Users\user\Desktop\L3\projet perso\app\app_bank\build\windows\x64\_deps\nuget-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\A405CB4B638C9677BA7EB92E15EE9623\NUGET-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/Debug/nuget-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/nuget-populate-prefix/src/nuget-populate-stamp/Debug/nuget-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKEFILES\DF17E45A33D0E66662AB838253713D9D\NUGET-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\L3\PROJET PERSO\APP\APP_BANK\BUILD\WINDOWS\X64\_DEPS\NUGET-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild" "-BC:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild" --check-stamp-file "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

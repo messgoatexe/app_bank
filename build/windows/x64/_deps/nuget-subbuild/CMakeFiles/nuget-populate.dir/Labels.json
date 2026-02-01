@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/nuget-populate"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/df17e45a33d0e66662ab838253713d9d/nuget-populate.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/a405cb4b638c9677ba7eb92e15ee9623/nuget-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-copyfile.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/L3/projet perso/app/app_bank/build/windows/x64/_deps/nuget-subbuild/CMakeFiles/55ec4b6cef9103ae4ded0ceca526351a/nuget-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nuget-populate"
+		],
+		"name" : "nuget-populate"
+	}
+}
