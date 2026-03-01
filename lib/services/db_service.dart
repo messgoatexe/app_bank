@@ -1,5 +1,6 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class DBService {
   DBService._private();
@@ -180,6 +181,9 @@ class DBService {
   }
 
   Database get db {
+    if (kIsWeb) {
+      throw Exception('Cannot access SQLite database on web platform. Web platform does not support local file access.');
+    }
     if (_db == null) throw Exception('Database not initialized');
     return _db!;
   }

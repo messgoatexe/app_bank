@@ -215,4 +215,147 @@ class NotificationService {
   Future<List<PendingNotificationRequest>> getPendingNotifications() async {
     return await _notificationsPlugin.pendingNotificationRequests();
   }
+
+  /// Show notification with category icon
+  Future<void> showCategoryNotification({
+    required int id,
+    required String categoryName,
+    required double currentAmount,
+    required double limit,
+    required String emoji,
+  }) async {
+    final percentage = (currentAmount / limit * 100).toStringAsFixed(1);
+    final isCritical = currentAmount > (limit * 0.9);
+    
+    const AndroidNotificationDetails androidNotificationDetails =
+        AndroidNotificationDetails(
+      'app_bank_budget_alerts',
+      'Budget Alerts',
+      channelDescription: 'Alertes de dépassement de budget',
+      importance: Importance.max,
+      priority: Priority.high,
+      showWhen: true,
+    );
+
+    const NotificationDetails notificationDetails = NotificationDetails(
+      android: androidNotificationDetails,
+      iOS: DarwinNotificationDetails(),
+    );
+
+    final title = isCritical 
+        ? '$emoji ALERTE: $categoryName' 
+        : '$emoji Budget: $categoryName';
+    final body = '$percentage% dépensé ($currentAmount€ / $limit€)';
+
+    await _notificationsPlugin.show(
+      id,
+      title,
+      body,
+      notificationDetails,
+      payload: 'budget_alert_$categoryName',
+    );
+  }
+
+  /// Show shared expense notification
+  Future<void> showSharedExpenseNotification({
+    required int id,
+    required String userName,
+    required String description,
+    required double amount,
+  }) async {
+    const AndroidNotificationDetails androidNotificationDetails =
+        AndroidNotificationDetails(
+      'app_bank_shared_expenses',
+      'Shared Expenses',
+      channelDescription: 'Notifications de dépenses partagées',
+      importance: Importance.high,
+      priority: Priority.high,
+    );
+
+    const NotificationDetails notificationDetails = NotificationDetails(
+      android: androidNotificationDetails,
+      iOS: DarwinNotificationDetails(),
+    );
+
+    await _notificationsPlugin.show(
+      id,
+      '👥 Dépense partagée',
+      '$userName a ajouté: $description ($amount€)',
+      notificationDetails,
+      payload: 'shared_expense_$userName',
+    );
+  }
+
+  /// Show offline mode notification
+  Future<void> showOfflineModeNotification({
+    required int id,
+    required bool isOffline,
+  }) async {
+    const AndroidNotificationDetails androidNotificationDetails =
+        AndroidNotificationDetails(
+      'app_bank_sync_status',
+      'Sync Status',
+      channelDescription: 'Statut de synchronisation',
+      importance: Importance.low,
+      priority: Priority.low,
+      onlyAlertOnce: true,
+    );
+
+    const NotificationDetails notificationDetails = NotificationDetails(
+      android: androidNotificationDetails,
+      iOS: DarwinNotificationDetails(),
+    );
+
+    if (isOffline) {
+      await _notificationsPlugin.show(
+        id,
+        '📵 Mode hors ligne',
+        'Les modifications seront synchronisées quand la connexion sera rétablie',
+        notificationDetails,
+        payload: 'offline_mode',
+      );
+    } else {
+      await _notificationsPlugin.show(
+        id,
+        '✅ Mode en ligne',
+        'Synchronisation en cours...',
+        notificationDetails,
+        payload: 'online_mode',
+      );
+    }
+  }
+
+  /// Show sync completion notification
+  Future<void> showSyncCompleteNotification({
+    required int id,
+    required int successCount,
+    required int failureCount,
+  }) async {
+    const AndroidNotificationDetails androidNotificationDetails =
+        AndroidNotificationDetails(
+      'app_bank_sync_complete',
+      'Sync Complete',
+      channelDescription: 'Notification de fin de synchronisation',
+      importance: Importance.high,
+      priority: Priority.high,
+    );
+
+    const NotificationDetails notificationDetails = NotificationDetails(
+      android: androidNotificationDetails,
+      iOS: DarwinNotificationDetails(),
+    );
+
+    final status = failureCount == 0 
+        ? '✅ Synchronisation réussie'
+        : '⚠️ Synchronisation partielle';
+    final body = '$successCount ajouté, $failureCount échoué';
+
+    await _notificationsPlugin.show(
+      id,
+      status,
+      body,
+      notificationDetails,
+      payload: 'sync_complete',
+    );
+  }
 }

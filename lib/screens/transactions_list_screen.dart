@@ -5,6 +5,8 @@ import '../providers/transactions_provider.dart';
 import 'add_edit_transaction_screen.dart';
 import 'profile_screen.dart';
 import 'dashboard_screen.dart';
+import 'search_transactions_screen.dart';
+import 'export_transactions_screen.dart';
 import '../widgets/transaction_tile.dart';
 
 class TransactionsListScreen extends StatefulWidget {
@@ -59,12 +61,56 @@ class _TransactionsListScreenState extends State<TransactionsListScreen> with Ti
         bottom: TabBar(
           controller: _tabController,
           tabs: const [
-            Tab(icon: Icon(Icons.dashboard), text: 'Dashboard'),
-            Tab(icon: Icon(Icons.list), text: 'Transactions'),
+            Tab(
+              icon: Icon(Icons.home),
+              text: 'Dashboard',
+            ),
+            Tab(
+              icon: Icon(Icons.receipt),
+              text: 'Transactions',
+            ),
           ],
+          indicatorColor: Colors.white,
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.white70,
         ),
         actions: [
-          IconButton(onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProfileScreen())), icon: const Icon(Icons.person)),
+          IconButton(
+            onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SearchTransactionsScreen())),
+            icon: const Icon(Icons.search),
+            tooltip: 'Chercher une transaction',
+          ),
+          PopupMenuButton<String>(
+            onSelected: (String result) {
+              if (result == 'export') {
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ExportTransactionsScreen()));
+              } else if (result == 'profile') {
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProfileScreen()));
+              }
+            },
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+              const PopupMenuItem<String>(
+                value: 'export',
+                child: Row(
+                  children: [
+                    Icon(Icons.download, size: 20),
+                    SizedBox(width: 8),
+                    Text('Exporter'),
+                  ],
+                ),
+              ),
+              const PopupMenuItem<String>(
+                value: 'profile',
+                child: Row(
+                  children: [
+                    Icon(Icons.account_circle, size: 20),
+                    SizedBox(width: 8),
+                    Text('Profil'),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ],
       ),
       floatingActionButton: _tabController.index == 1

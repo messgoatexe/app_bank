@@ -119,7 +119,7 @@ class _ManageCategoriesScreenState extends State<ManageCategoriesScreen> {
                                   '0xFFFF5722',
                             ),
                           ),
-                          child: const Icon(Icons.category, color: Colors.white),
+                          child: const Icon(Icons.label, color: Colors.white),
                         ),
                         title: Text(category.name),
                         trailing: IconButton(

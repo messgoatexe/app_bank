@@ -1,4 +1,5 @@
 import 'package:uuid/uuid.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import '../models/transaction_model.dart';
 import 'db_service.dart';
 
@@ -8,15 +9,31 @@ class TransactionsService {
   final _uuid = const Uuid();
 
   Future<List<TransactionModel>> getAll() async {
-    final db = DBService.instance.db;
-    final res = await db.query('transactions', orderBy: 'date DESC');
-    return res.map((e) => TransactionModel.fromMap(e)).toList();
+    try {
+      final db = DBService.instance.db;
+      final res = await db.query('transactions', orderBy: 'date DESC');
+      return res.map((e) => TransactionModel.fromMap(e)).toList();
+    } catch (e) {
+      if (kIsWeb) {
+        print('[TransactionsService] Web platform: returning empty list');
+        return [];
+      }
+      rethrow;
+    }
   }
 
   Future<List<TransactionModel>> getByUserId(String userId) async {
-    final db = DBService.instance.db;
-    final res = await db.query('transactions', where: 'user_id = ?', whereArgs: [userId], orderBy: 'date DESC');
-    return res.map((e) => TransactionModel.fromMap(e)).toList();
+    try {
+      final db = DBService.instance.db;
+      final res = await db.query('transactions', where: 'user_id = ?', whereArgs: [userId], orderBy: 'date DESC');
+      return res.map((e) => TransactionModel.fromMap(e)).toList();
+    } catch (e) {
+      if (kIsWeb) {
+        print('[TransactionsService] Web platform: returning empty list');
+        return [];
+      }
+      rethrow;
+    }
   }
 
   Future<TransactionModel> create({
@@ -37,17 +54,34 @@ class TransactionsService {
       description: description,
       date: date,
     );
-    await DBService.instance.db.insert('transactions', tx.toMap());
+    try {
+      await DBService.instance.db.insert('transactions', tx.toMap());
+    } catch (e) {
+      if (!kIsWeb) rethrow;
+      print('[TransactionsService] Web platform: insert() no-op');
+    }
     return tx;
   }
 
   Future<bool> update(TransactionModel tx) async {
-    final count = await DBService.instance.db.update('transactions', tx.toMap(), where: 'id = ?', whereArgs: [tx.id]);
-    return count == 1;
+    try {
+      final count = await DBService.instance.db.update('transactions', tx.toMap(), where: 'id = ?', whereArgs: [tx.id]);
+      return count == 1;
+    } catch (e) {
+      if (!kIsWeb) rethrow;
+      print('[TransactionsService] Web platform: update() no-op');
+      return true;
+    }
   }
 
   Future<bool> delete(String id) async {
-    final count = await DBService.instance.db.delete('transactions', where: 'id = ?', whereArgs: [id]);
-    return count == 1;
+    try {
+      final count = await DBService.instance.db.delete('transactions', where: 'id = ?', whereArgs: [id]);
+      return count == 1;
+    } catch (e) {
+      if (!kIsWeb) rethrow;
+      print('[TransactionsService] Web platform: delete() no-op');
+      return true;
+    }
   }
 }
