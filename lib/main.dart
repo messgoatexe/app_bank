@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import 'providers/auth_provider.dart';
 import 'providers/transactions_provider.dart';
 import 'providers/reminders_provider.dart';
+import 'providers/theme_provider.dart';
+import 'providers/analytics_provider.dart';
 import 'screens/login_screen.dart';
 import 'screens/transactions_list_screen.dart';
 import 'services/db_service.dart';
@@ -118,6 +120,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        ChangeNotifierProvider<ThemeProvider>(
+          create: (_) => ThemeProvider(),
+        ),
         ChangeNotifierProvider<AuthProvider>(
           create: (_) => AuthProvider(),
         ),
@@ -127,18 +132,22 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<RemindersProvider>(
           create: (_) => RemindersProvider.instance,
         ),
+        ChangeNotifierProvider<AnalyticsProvider>(
+          create: (_) => AnalyticsProvider(),
+        ),
         ChangeNotifierProvider<OfflineSyncService>(
           create: (_) => OfflineSyncService.instance,
         ),
       ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'App Bancaire - Noé Gomes',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
-          useMaterial3: true,
+      child: Consumer<ThemeProvider>(
+        builder: (context, themeProvider, _) => MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'App Bancaire - Noé Gomes',
+          theme: themeProvider.lightTheme,
+          darkTheme: themeProvider.darkTheme,
+          themeMode: themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
+          home: const EntryPoint(),
         ),
-        home: const EntryPoint(),
       ),
     );
   }
